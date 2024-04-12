@@ -19,3 +19,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 eval "$(zoxide init --cmd cd zsh)"
+
+alias ls="exa"
+alias tree="exa --tree"
+alias cat="bat"
