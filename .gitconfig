@@ -1,0 +1,24 @@
+[include]
+  path = .gitconfig.secret
+[pull]
+	rebase = true
+[core]
+  editor = code --wait
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[rebase]
+  instructionFormat = (%an <%ae>) %s
+[init]
+  defaultBranch = main
+[git-town]
+  hosting-platform = github
+  main-branch = development
+  perennials = [ "development", "testing", "staging", "main" ]
+  sync-feature-strategy = rebase
+  sync-perennial-strategy = rebase
