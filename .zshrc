@@ -1,7 +1,9 @@
 export PATH=$PATH:~/.local/bin
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
+export ELECTRON_OZONE_PLATFORM_HINT=auto
 
 eval "$(oh-my-posh init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/nvm/init-nvm.sh
 source /usr/share/zsh/plugins/zsh-fzf-plugin/fzf.plugin.zsh
@@ -18,8 +20,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-eval "$(zoxide init --cmd cd zsh)"
-
 alias ls="exa"
 alias tree="exa --tree"
 alias cat="bat"
+alias watch="entr"
+alias gt="git town"
