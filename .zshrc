@@ -20,8 +20,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-alias ls="exa"
-alias tree="exa --tree"
+alias ls="eza"
+alias tree="eza --tree"
 alias cat="bat"
 alias watch="entr"
 alias gt="git town"
