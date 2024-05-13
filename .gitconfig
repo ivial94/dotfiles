@@ -1,5 +1,7 @@
 [include]
   path = .gitconfig.secret
+[pull]
+	rebase = true
 [core]
   editor = code --wait
 [diff]
