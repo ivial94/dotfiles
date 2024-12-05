@@ -26,6 +26,7 @@ source $HOME/.local/share/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 alias ls="eza --icons"
 alias tree="eza --icons --tree"
 alias cat="bat"
+alias tx="tmux attach || tmux new"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
