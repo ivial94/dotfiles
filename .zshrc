@@ -28,9 +28,9 @@ alias tree="eza --icons --tree"
 alias cat="bat"
 alias tx="tmux attach || tmux new"
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-[ -s "$HOME/.bun/_bun" ] && \. "$HOME/.bun/_bun"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 bindkey "^[[1;2C" forward-word
 bindkey "^[[1;2D" backward-word
