@@ -1,0 +1,28 @@
+[pull]
+  rebase = true
+
+[rebase]
+	instructionFormat = "(%an <%ae>) %s"
+
+[git-town]
+	auto-sync = true
+	detached = false
+	ignore-uncommitted = false
+	interactive = true
+	main-branch = "main"
+	new-branch-type = "feature"
+	order = "asc"
+	proposal-breadcrumb = "none"
+	proposal-breadcrumb-direction = "down"
+	push-branches = true
+	push-hook = true
+	share-new-branches = "no"
+	ship-delete-tracking-branch = true
+	ship-strategy = "squash-merge"
+	stash = true
+	sync-feature-strategy = "rebase"
+	sync-perennial-strategy = "rebase"
+	sync-prototype-strategy = "rebase"
+	sync-tags = true
+	sync-upstream = true
+	unknown-branch-type = "feature"
